@@ -1,0 +1,400 @@
+/* =========================================================
+   PDF-builder Designer — Éditeur graphique de layouts
+   ========================================================= */
+
+/* === LAYOUT GLOBAL === */
+.pdfbd-wrap {
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 120px);
+    min-height: 500px;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+}
+
+/* === TOPBAR === */
+.pdfbd-topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 12px;
+    background: #f5f5f5;
+    border-bottom: 1px solid #ddd;
+    flex-shrink: 0;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.pdfbd-topbar-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.pdfbd-topbar-right {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    flex-wrap: wrap;
+}
+
+.pdfbd-topbar select {
+    padding: 4px 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 13px;
+}
+
+/* Homogénéisation des boutons de la topbar — blanc sur violet */
+.pdfbd-topbar button,
+.pdfbd-topbar a.butActionDelete,
+.pdfbd-topbar .butAction,
+.pdfbd-topbar .butActionNew,
+.pdfbd-topbar .butActionDelete {
+    background: #4a6fa1 !important;
+    color: #fff !important;
+    border: none !important;
+    border-radius: 3px !important;
+    padding: 5px 10px !important;
+    font-size: 12px !important;
+    font-weight: normal !important;
+    cursor: pointer !important;
+    text-decoration: none !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 4px !important;
+    line-height: 1.4 !important;
+    white-space: nowrap !important;
+    box-shadow: none !important;
+    margin: 0 !important;
+}
+
+.pdfbd-topbar button:hover,
+.pdfbd-topbar a.butActionDelete:hover,
+.pdfbd-topbar .butAction:hover,
+.pdfbd-topbar .butActionNew:hover,
+.pdfbd-topbar .butActionDelete:hover {
+    background: #2a4f81 !important;
+    color: #fff !important;
+    text-decoration: none !important;
+}
+
+/* Bouton Supprimer : rouge discret pour signaler le danger */
+.pdfbd-topbar a.butActionDelete,
+.pdfbd-topbar .butActionDelete {
+    background: #a04040 !important;
+}
+
+.pdfbd-topbar a.butActionDelete:hover,
+.pdfbd-topbar .butActionDelete:hover {
+    background: #7a2828 !important;
+}
+
+/* === ÉDITEUR === */
+.pdfbd-editor {
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+}
+
+/* === PALETTE === */
+.pdfbd-palette {
+    width: 170px;
+    flex-shrink: 0;
+    background: #fafafa;
+    border-right: 1px solid #ddd;
+    overflow-y: auto;
+    padding: 8px 0;
+}
+
+.pdfbd-palette-title {
+    font-weight: bold;
+    font-size: 11px;
+    text-transform: uppercase;
+    color: #888;
+    padding: 4px 10px 8px;
+    letter-spacing: 0.5px;
+}
+
+.pdfbd-zone-type {
+    padding: 6px 10px;
+    cursor: grab;
+    font-size: 12px;
+    border-bottom: 1px solid #eee;
+    user-select: none;
+    transition: background 0.1s;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.pdfbd-zone-type:hover {
+    background: #e8f0fe;
+}
+
+.pdfbd-zone-type:active {
+    cursor: grabbing;
+}
+
+/* === CANVAS === */
+.pdfbd-canvas-wrap {
+    flex: 1;
+    overflow: auto;
+    background: #888;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    gap: 8px;
+}
+
+.pdfbd-page-label {
+    color: #eee;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.pdfbd-canvas {
+    position: relative;
+    background: #fff;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+    cursor: default;
+    /* Dimensions fixées par JS (420x594px pour A4) */
+}
+
+.pdfbd-canvas-hint {
+    color: #ccc;
+    font-size: 11px;
+    text-align: center;
+}
+
+/* === GUIDES DE MARGES === */
+.pdfbd-guide {
+    position: absolute;
+    background: rgba(74, 111, 161, 0.25);
+    pointer-events: none;
+    z-index: 1;
+}
+
+/* === ZONES === */
+.pdfbd-zone {
+    position: absolute;
+    border: 1.5px dashed #4a6fa1;
+    background: rgba(74, 111, 161, 0.06);
+    cursor: move;
+    z-index: 10;
+    user-select: none;
+    box-sizing: border-box;
+    min-width: 10px;
+    min-height: 6px;
+    transition: border-color 0.1s, background 0.1s;
+}
+
+.pdfbd-zone:hover {
+    border-color: #2a4f81;
+    background: rgba(74, 111, 161, 0.12);
+}
+
+.pdfbd-zone-selected {
+    border: 2px solid #e44 !important;
+    background: rgba(238, 68, 68, 0.08) !important;
+    z-index: 100 !important;
+}
+
+.pdfbd-zone-label {
+    position: absolute;
+    top: 2px;
+    left: 3px;
+    font-size: 9px;
+    color: #4a6fa1;
+    white-space: nowrap;
+    overflow: hidden;
+    pointer-events: none;
+    line-height: 1.2;
+    max-width: calc(100% - 6px);
+}
+
+.pdfbd-zone-selected .pdfbd-zone-label {
+    color: #c00;
+}
+
+/* === HANDLES DE RESIZE === */
+.pdfbd-resize-handle {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background: #fff;
+    border: 1.5px solid #4a6fa1;
+    border-radius: 2px;
+    z-index: 200;
+}
+
+.pdfbd-zone-selected .pdfbd-resize-handle {
+    border-color: #e44;
+}
+
+.pdfbd-resize-nw { top: -4px; left: -4px; cursor: nw-resize; }
+.pdfbd-resize-ne { top: -4px; right: -4px; cursor: ne-resize; }
+.pdfbd-resize-sw { bottom: -4px; left: -4px; cursor: sw-resize; }
+.pdfbd-resize-se { bottom: -4px; right: -4px; cursor: se-resize; }
+
+/* === PANNEAU PROPRIÉTÉS === */
+.pdfbd-props {
+    width: 260px;
+    flex-shrink: 0;
+    background: #fafafa;
+    border-left: 1px solid #ddd;
+    overflow-y: auto;
+    padding: 8px 10px;
+}
+
+.pdfbd-props-title {
+    font-weight: bold;
+    font-size: 11px;
+    text-transform: uppercase;
+    color: #888;
+    margin-bottom: 10px;
+    letter-spacing: 0.5px;
+}
+
+.pdfbd-props-empty {
+    color: #aaa;
+    font-size: 12px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.pdfbd-props-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 12px;
+}
+
+.pdfbd-props-table td {
+    padding: 3px 2px;
+    vertical-align: middle;
+}
+
+.pdfbd-props-table td:first-child {
+    color: #666;
+    white-space: nowrap;
+    padding-right: 6px;
+    font-size: 11px;
+}
+
+.pdfbd-props-table input[type="text"],
+.pdfbd-props-table input[type="number"],
+.pdfbd-props-table select {
+    width: 100%;
+    padding: 2px 4px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    font-size: 12px;
+    box-sizing: border-box;
+}
+
+.pdfbd-props-table input[type="color"] {
+    width: 100%;
+    height: 24px;
+    padding: 1px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.pdfbd-props-actions {
+    margin-top: 12px;
+    text-align: center;
+}
+
+/* === MODAL === */
+.pdfbd-modal {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.5);
+    z-index: 10000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pdfbd-modal-content {
+    background: #fff;
+    border-radius: 6px;
+    padding: 24px;
+    min-width: 360px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+}
+
+.pdfbd-modal-content h3 {
+    margin: 0 0 16px;
+    font-size: 16px;
+    color: #333;
+}
+
+/* === SECTIONS PROPRIÉTÉS === */
+.pdfbd-props-section td {
+    background: #e8eef5;
+    color: #4a6fa1;
+    font-weight: bold;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding: 5px 4px 3px;
+    border-top: 1px solid #d0d8e8;
+}
+
+.pdfbd-props-table input[type="checkbox"] {
+    width: auto;
+    cursor: pointer;
+    margin: 2px 0;
+}
+
+/* === INFO === */
+div.info {
+    padding: 20px;
+    text-align: center;
+    color: #666;
+}
+
+/* === PANNEAU PARAMÈTRES DU DOCUMENT === */
+.pdfbd-layout-panel {
+    margin-top: 8px;
+    border-top: 2px solid #4a6fa1;
+}
+
+.pdfbd-layout-panel-title {
+    background: #4a6fa1;
+    color: #fff;
+    font-size: 11px;
+    font-weight: bold;
+    padding: 5px 8px;
+    cursor: pointer;
+    user-select: none;
+    letter-spacing: 0.3px;
+}
+
+.pdfbd-layout-panel-title:hover {
+    background: #2a4f81;
+}
+
+.pdfbd-layout-panel.collapsed .pdfbd-layout-panel-body {
+    display: none;
+}
+
+.pdfbd-layout-panel-body {
+    overflow-y: auto;
+    max-height: 420px;
+}
+
+.pdfbd-bg-manage-link {
+    font-size: 11px;
+    color: #4a6fa1;
+    text-decoration: none;
+}
+
+.pdfbd-bg-manage-link:hover {
+    text-decoration: underline;
+}

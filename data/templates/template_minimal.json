@@ -1,0 +1,24 @@
+{
+  "layout": {
+    "label": "Minimaliste",
+    "doc_type": "invoice",
+    "paper_format": "A4",
+    "margin_top": 15.0,
+    "margin_left": 15.0,
+    "margin_right": 15.0,
+    "margin_bottom": 15.0
+  },
+  "zones": [
+    { "zone_type": "logo_main",         "pos_x": 0,    "pos_y": 0,    "width": 30,  "height": 15, "label": "Logo",            "sort_order": 1 },
+    { "zone_type": "field_ref",         "pos_x": 0,    "pos_y": 20,   "width": 180, "height": 10, "label": "Référence",       "sort_order": 2, "params": { "font_size": 16, "bold": true, "color_font": "#111111" } },
+    { "zone_type": "separator",         "pos_x": 0,    "pos_y": 33,   "width": 180, "height": 2,  "label": "Séparateur",     "sort_order": 3, "params": { "color": "#111111", "line_width": 0.5 } },
+    { "zone_type": "address_sender",    "pos_x": 0,    "pos_y": 38,   "width": 80,  "height": 28, "label": "Émetteur",        "sort_order": 4, "params": { "font_size": 9 } },
+    { "zone_type": "address_recipient", "pos_x": 100,  "pos_y": 38,   "width": 80,  "height": 28, "label": "Destinataire",    "sort_order": 5, "params": { "font_size": 9 } },
+    { "zone_type": "field_date",        "pos_x": 0,    "pos_y": 70,   "width": 50,  "height": 7,  "label": "Date",            "sort_order": 6, "params": { "font_size": 8, "color_font": "#555555" } },
+    { "zone_type": "field_duedate",     "pos_x": 55,   "pos_y": 70,   "width": 50,  "height": 7,  "label": "Échéance",        "sort_order": 7, "params": { "font_size": 8, "color_font": "#555555" } },
+    { "zone_type": "table_lines",       "pos_x": 0,    "pos_y": 82,   "width": 180, "height": 100,"label": "Lignes produits", "sort_order": 8, "params": { "font_size": 9, "font_size_header": 8, "header_bg": "#333333", "header_txt": "#ffffff", "line_height": 5.5 } },
+    { "zone_type": "table_totals",      "pos_x": 100,  "pos_y": 190,  "width": 80,  "height": 20, "label": "Totaux",          "sort_order": 9, "params": { "font_size": 9, "line_height": 5.5, "label_width": 50, "header_bg": "#333333" } },
+    { "zone_type": "separator",         "pos_x": 0,    "pos_y": 220,  "width": 180, "height": 2,  "label": "Séparateur bas",  "sort_order": 10, "params": { "color": "#111111", "line_width": 0.5 } },
+    { "zone_type": "text_freetext",     "pos_x": 0,    "pos_y": 225,  "width": 180, "height": 18, "label": "Notes",           "sort_order": 11, "params": { "font_size": 8, "color_font": "#555555" } }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "layout": {
+    "label": "Business",
+    "doc_type": "invoice",
+    "paper_format": "A4",
+    "margin_top": 10.0,
+    "margin_left": 10.0,
+    "margin_right": 10.0,
+    "margin_bottom": 10.0
+  },
+  "zones": [
+    { "zone_type": "text_static",       "pos_x": 0,    "pos_y": 0,    "width": 190, "height": 25, "label": "Fond en-tête",   "sort_order": 0, "params": { "bg_color": "#2c5f8a" } },
+    { "zone_type": "logo_main",         "pos_x": 2,    "pos_y": 2,    "width": 40,  "height": 18, "label": "Logo",           "sort_order": 1 },
+    { "zone_type": "field_ref",         "pos_x": 95,   "pos_y": 5,    "width": 93,  "height": 9,  "label": "Référence",      "sort_order": 2, "params": { "font_size": 13, "bold": true, "align": "right", "color_font": "#ffffff" } },
+    { "zone_type": "field_date",        "pos_x": 95,   "pos_y": 15,   "width": 93,  "height": 7,  "label": "Date",           "sort_order": 3, "params": { "font_size": 9, "align": "right", "color_font": "#ffffff" } },
+    { "zone_type": "address_sender",    "pos_x": 0,    "pos_y": 30,   "width": 90,  "height": 35, "label": "Émetteur",       "sort_order": 4, "params": { "font_size": 9 } },
+    { "zone_type": "address_recipient", "pos_x": 100,  "pos_y": 30,   "width": 90,  "height": 35, "label": "Destinataire",   "sort_order": 5, "params": { "font_size": 9, "bg_color": "#eef3fa" } },
+    { "zone_type": "field_object",      "pos_x": 0,    "pos_y": 70,   "width": 190, "height": 8,  "label": "Objet",          "sort_order": 6, "params": { "font_size": 10, "bold": true, "color_font": "#2c5f8a" } },
+    { "zone_type": "separator",         "pos_x": 0,    "pos_y": 80,   "width": 190, "height": 2,  "label": "Séparateur",     "sort_order": 7, "params": { "color": "#2c5f8a", "line_width": 0.5 } },
+    { "zone_type": "table_lines",       "pos_x": 0,    "pos_y": 84,   "width": 190, "height": 100,"label": "Lignes produits", "sort_order": 8, "params": { "font_size": 9, "font_size_header": 8, "header_bg": "#2c5f8a", "header_txt": "#ffffff", "line_height": 5.5, "col_ref": 22, "col_qty": 13, "col_puht": 19, "col_vat": 13, "col_total": 25 } },
+    { "zone_type": "table_totals",      "pos_x": 110,  "pos_y": 195,  "width": 80,  "height": 22, "label": "Totaux",         "sort_order": 9, "params": { "font_size": 9, "line_height": 5.5, "label_width": 52, "header_bg": "#2c5f8a" } },
+    { "zone_type": "table_vat_breakdown","pos_x": 0,   "pos_y": 195,  "width": 85,  "height": 18, "label": "Ventilation TVA","sort_order": 10, "params": { "font_size": 8 } },
+    { "zone_type": "rib_block",         "pos_x": 0,    "pos_y": 228,  "width": 110, "height": 22, "label": "RIB",            "sort_order": 11, "params": { "font_size": 8 } },
+    { "zone_type": "qrcode",            "pos_x": 165,  "pos_y": 228,  "width": 25,  "height": 25, "label": "QR Code",        "sort_order": 12 },
+    { "zone_type": "text_freetext",     "pos_x": 0,    "pos_y": 255,  "width": 190, "height": 15, "label": "Notes publiques","sort_order": 13, "params": { "font_size": 8 } },
+    { "zone_type": "signature_block",   "pos_x": 120,  "pos_y": 245,  "width": 70,  "height": 25, "label": "Signature",      "sort_order": 14 },
+    { "zone_type": "text_static",       "pos_x": 0,    "pos_y": 273,  "width": 190, "height": 4,  "label": "Pied de page",   "sort_order": 15, "params": { "bg_color": "#2c5f8a" } }
+  ]
+}

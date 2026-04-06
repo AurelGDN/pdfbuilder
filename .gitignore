@@ -1,0 +1,29 @@
+# Development files
+CAHIER_DES_CHARGES.md
+CLAUDE.md
+CHANGELOG.md.bak
+
+# OS & IDE
+.DS_Store
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.settings/
+
+# Build & vendor
+/vendor/
+/node_modules/
+composer.lock
+package-lock.json
+
+# Logs & temp files
+*.log
+/tmp/
+/temp/
+
+# Environment
+.env
+.env.local

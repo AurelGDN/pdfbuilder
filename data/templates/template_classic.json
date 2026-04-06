@@ -1,0 +1,28 @@
+{
+  "layout": {
+    "label": "Classique",
+    "doc_type": "invoice",
+    "paper_format": "A4",
+    "margin_top": 10.0,
+    "margin_left": 11.0,
+    "margin_right": 10.0,
+    "margin_bottom": 10.0
+  },
+  "zones": [
+    { "zone_type": "logo_main",         "pos_x": 0,    "pos_y": 0,    "width": 40, "height": 20, "label": "Logo",             "sort_order": 1 },
+    { "zone_type": "field_ref",         "pos_x": 100,  "pos_y": 0,    "width": 89, "height": 8,  "label": "Référence",         "sort_order": 2, "params": { "font_size": 10, "bold": true, "align": "right" } },
+    { "zone_type": "field_date",        "pos_x": 100,  "pos_y": 9,    "width": 89, "height": 7,  "label": "Date",              "sort_order": 3, "params": { "font_size": 9, "align": "right" } },
+    { "zone_type": "field_duedate",     "pos_x": 100,  "pos_y": 17,   "width": 89, "height": 7,  "label": "Échéance",          "sort_order": 4, "params": { "font_size": 9, "align": "right" } },
+    { "zone_type": "address_sender",    "pos_x": 0,    "pos_y": 28,   "width": 80, "height": 30, "label": "Émetteur",          "sort_order": 5, "params": { "font_size": 9 } },
+    { "zone_type": "address_recipient", "pos_x": 109,  "pos_y": 28,   "width": 80, "height": 30, "label": "Destinataire",      "sort_order": 6, "params": { "font_size": 9 } },
+    { "zone_type": "separator",         "pos_x": 0,    "pos_y": 62,   "width": 189, "height": 3, "label": "Séparateur",       "sort_order": 7 },
+    { "zone_type": "field_object",      "pos_x": 0,    "pos_y": 66,   "width": 189, "height": 7, "label": "Objet",            "sort_order": 8, "params": { "font_size": 10, "bold": true } },
+    { "zone_type": "table_lines",       "pos_x": 0,    "pos_y": 76,   "width": 189, "height": 100,"label": "Lignes produits",  "sort_order": 9, "params": { "font_size": 9, "font_size_header": 8, "header_bg": "#4a6fa1", "header_txt": "#ffffff", "line_height": 5.5, "col_ref": 22, "col_qty": 13, "col_puht": 19, "col_vat": 13, "col_total": 22 } },
+    { "zone_type": "table_totals",      "pos_x": 109,  "pos_y": 185,  "width": 80, "height": 20, "label": "Totaux",           "sort_order": 10, "params": { "font_size": 9, "line_height": 5.5, "label_width": 50, "header_bg": "#4a6fa1" } },
+    { "zone_type": "table_vat_breakdown","pos_x": 0,   "pos_y": 185,  "width": 80, "height": 18, "label": "Ventilation TVA",  "sort_order": 11, "params": { "font_size": 8 } },
+    { "zone_type": "text_freetext",     "pos_x": 0,    "pos_y": 215,  "width": 189, "height": 18, "label": "Notes publiques", "sort_order": 12, "params": { "font_size": 8 } },
+    { "zone_type": "separator",         "pos_x": 0,    "pos_y": 238,  "width": 189, "height": 3, "label": "Séparateur pied", "sort_order": 13 },
+    { "zone_type": "rib_block",         "pos_x": 0,    "pos_y": 242,  "width": 100, "height": 20, "label": "RIB / Coordonnées bancaires", "sort_order": 14, "params": { "font_size": 8 } },
+    { "zone_type": "qrcode",            "pos_x": 164,  "pos_y": 240,  "width": 25, "height": 25, "label": "QR Code",         "sort_order": 15 }
+  ]
+}

@@ -1,0 +1,349 @@
+# Translation file for PDF-builder module (French)
+# Copyright (C) 2024 Antigravity Project
+# GPL v2 or later
+
+# == Module ==
+ModulePdfBuilderName=PDF-builder
+ModulePdfBuilderDesc=Constructeur de modèles PDF modernes et personnalisables pour Dolibarr
+
+# == Interface admin ==
+PdfBuilderSetup=Configuration PDF-builder
+PdfBuilderThemes=Thèmes
+PdfBuilderGlobalOptions=Options globales
+PdfBuilderInvoices=Factures
+PdfBuilderProposals=Devis
+PdfBuilderOrders=Commandes
+PdfBuilderAbout=À propos
+
+# == Gestion des thèmes ==
+PdfBuilderNewTheme=Nouveau thème
+PdfBuilderEditTheme=Modifier le thème
+PdfBuilderNoThemeForType=Aucun thème pour le type "%s". Vous pouvez en créer un ci-dessous.
+PdfBuilderCreateFirstTheme=Créer le premier thème
+PdfBuilderThemeCreated=Thème créé avec succès
+PdfBuilderThemeDeleted=Thème supprimé
+PdfBuilderThemeDuplicated=Thème dupliqué
+PdfBuilderThemeSetAsDefault=Thème défini par défaut
+PdfBuilderConfirmDelete=Supprimer le thème "%s" ? Cette action est irréversible.
+PdfBuilderDefault=Défaut
+PdfBuilderDuplicate=Dupliquer
+PdfBuilderSetDefault=Définir par défaut
+PdfBuilderFilterByDocType=Filtrer par type de document :
+
+# == Types de documents ==
+PdfBuilderDocType=Type de document
+PdfBuilderDocTypeInvoice=Facture client
+PdfBuilderDocTypePropal=Devis
+PdfBuilderDocTypeOrder=Commande client
+PdfBuilderDocTypeSupplierInvoice=Facture fournisseur
+PdfBuilderDocTypeSupplierOrder=Commande fournisseur
+PdfBuilderDocTypeSupplierProposal=Demande de prix fournisseur
+PdfBuilderDocTypeShipment=Bon d'expédition
+PdfBuilderDocTypeReceipt=Bon de livraison
+PdfBuilderDocTypeContract=Contrat
+PdfBuilderDocTypeFichinter=Fiche intervention
+PdfBuilderDocTypeExpenseReport=Note de frais
+
+# == Paramètres généraux ==
+PdfBuilderGeneralSettings=Paramètres généraux
+PdfBuilderFont=Police FPDF
+PdfBuilderFontSize=Taille de police
+PdfBuilderTypoSection=Typographie détaillée par bloc
+PdfBuilderTypoRef=Réf. / Date / Code Client
+PdfBuilderTypoAddress=Adresses (Emetteur / Destinataire)
+PdfBuilderTypoTheader=En-têtes du tableau & Totaux
+PdfBuilderTypoDesc=Description (Lignes produits/services)
+PdfBuilderTypoNote=Notes Publiques & Banque
+PdfBuilderTypoFreetext=Texte libre (Notes)
+PdfBuilderTypoSender=Bloc Émetteur
+PdfBuilderTypoRecipient=Bloc Destinataire
+PdfBuilderTypoFooter=Pied de page
+PdfBuilderStyleNormal=Normal
+PdfBuilderStyleBold=Gras
+PdfBuilderStyleItalic=Italique
+PdfBuilderStyleBoldItalic=Gras & Italique
+PdfBuilderFontGlobal=Police globale (surcharge)
+PdfBuilderPaperFormat=Format papier
+PdfBuilderBorderStyle=Style de bordure
+PdfBuilderBorderSolid=Plein
+PdfBuilderBorderDashed=Tirets
+PdfBuilderIsDefault=Thème par défaut
+PdfBuilderShowProfIds=Afficher les identifiants professionnels
+PdfBuilderImagePath=Source / Chemin de l'image
+
+# == Marges ==
+PdfBuilderMargins=Marges du document (mm)
+PdfBuilderMarginTop=Marge supérieure
+PdfBuilderMarginBottom=Marge inférieure
+PdfBuilderMarginLeft=Marge gauche
+PdfBuilderMarginRight=Marge droite
+PdfBuilderTopBottom=Haut / Bas
+PdfBuilderLeftRight=Gauche / Droite
+PdfBuilderPadding=Marges internes (mm)
+
+# == Couleurs ==
+PdfBuilderColors=Couleurs
+PdfBuilderColorFont=Couleur du texte
+PdfBuilderColorBorder=Couleur des bordures
+PdfBuilderColorHeaderBg=Fond en-têtes colonnes
+PdfBuilderColorHeaderTxt=Texte en-têtes colonnes
+PdfBuilderColorAddressBg=Fond bloc émetteur
+PdfBuilderColorAddressBg2=Fond bloc destinataire
+PdfBuilderColorFontSender=Police bloc émetteur
+PdfBuilderColorFontRecipient=Police bloc destinataire
+
+# == Options d'affichage colonnes ==
+PdfBuilderColumnSettings=Affichage des colonnes
+PdfBuilderShowLineNumbers=Afficher les numéros de ligne
+PdfBuilderShowRefColumn=Afficher la colonne Référence
+PdfBuilderShowPictures=Afficher les photos produits
+PdfBuilderHideVatColumn=Masquer la colonne TVA
+PdfBuilderHidePuht=Masquer le prix unitaire HT
+PdfBuilderHideQty=Masquer la quantité
+PdfBuilderHideDiscount=Masquer la remise
+PdfBuilderShowUnit=Afficher l'unité
+PdfBuilderShowLineTtc=Afficher le total TTC par ligne
+PdfBuilderHideDescLong=Masquer les descriptions longues
+PdfBuilderReverseAddress=Inverser émetteur/destinataire
+
+# Pied de page
+PdfBuilderShowFoldMark=Afficher le pli de correspondance
+PdfBuilderNoRepeatHeader=Ne pas répéter l'en-tête sur chaque page
+PdfBuilderHideRib=Masquer le numéro de compte (afficher seulement BIC/IBAN)
+PdfBuilderShowBonAccord=Afficher le "Bon pour accord"
+PdfBuilderShowSignature=Afficher la zone de signature
+PdfBuilderReverseAddress=Inverser émetteur et destinataire
+PdfBuilderOptions=Options de mise en page
+PdfBuilderHideSituation=Masquer le pourcentage de situation
+PdfBuilderShowTotalWeight=Afficher le poids total
+
+# == Largeurs colonnes ==
+PdfBuilderColumnWidths=Largeurs des colonnes
+PdfBuilderColNumber=N° ligne
+PdfBuilderColRef=Référence
+PdfBuilderColVat=TVA
+PdfBuilderColPuht=P.U. HT
+PdfBuilderColQty=Qté
+PdfBuilderColDiscount=Remise
+PdfBuilderColTotal=Total
+
+# == Texte libre ==
+PdfBuilderFreetextSettings=Texte libre (note publique)
+PdfBuilderFreetextHeight=Hauteur zone texte libre (mm)
+PdfBuilderFreetextFontsize=Taille police texte libre
+
+# == Options globales ==
+PdfBuilderGlobalDisplayOptions=Options d'affichage globales
+PdfBuilderGlobalHideDesc=Masquer les descriptions (global)
+PdfBuilderGlobalHideRef=Masquer les références (global)
+PdfBuilderGlobalShowLineTtc=Afficher le total TTC par ligne (global)
+PdfBuilderGlobalHideVatColumn=Masquer la colonne TVA (global)
+PdfBuilderBankHideNumber=Masquer le n° de compte (afficher seulement BIC/IBAN)
+
+# == Options factures ==
+PdfBuilderInvoiceOptions=Options spécifiques aux factures
+PdfBuilderInvoiceWithLineNumber=Numéros de ligne sur les factures
+PdfBuilderInvoiceWithPicture=Photos produits sur les factures
+PdfBuilderAutoLiquidation=Mention auto-liquidation de TVA
+PdfBuilderWithOutstanding=Afficher l'encours client
+PdfBuilderWithMergedPdf=Fusion PDF pour les factures
+
+# == Options devis ==
+PdfBuilderProposalOptions=Options spécifiques aux devis
+PdfBuilderPropalWithLineNumber=Numéros de ligne sur les devis
+PdfBuilderPropalWithPicture=Photos produits sur les devis
+PdfBuilderPropalWithMergedPdf=Fusion PDF pour les devis
+
+# == Options commandes ==
+PdfBuilderOrderOptions=Options spécifiques aux commandes
+PdfBuilderOrderWithLineNumber=Numéros de ligne sur les commandes
+PdfBuilderOrderWithPicture=Photos produits sur les commandes
+
+# == À propos ==
+PdfBuilderAboutDescription=PDF-builder est un module moderne et ergonomique de génération de PDF pour Dolibarr. Il permet de créer des thèmes entièrement personnalisables (couleurs, polices, colonnes, marges) sauvegardés en base de données, et de les appliquer automatiquement à tous les types de documents.
+PdfBuilderAboutFeatures=Fonctionnalités
+PdfBuilderAboutCompatibility=Compatibilité
+PdfBuilderAboutDev=Éditeur
+PdfBuilderFeatureThemes=Thèmes multiples par type de document
+PdfBuilderFeatureColors=Palette couleurs complète (HTML5 color pickers)
+PdfBuilderFeatureColumns=Colonnes configurables par largeur
+PdfBuilderFeatureDocs=Factures, devis, commandes, interventions, contrats...
+PdfBuilderFeatureMerge=Fusion PDF (annexes, CGV)
+PdfBuilderFeatureFR=Mentions légales françaises (SIRET, TVA, auto-liquidation)
+
+# == Mentions PDF ==
+PdfInvoiceTitle=FACTURE
+PdfPropalTitle=DEVIS
+PdfOrderTitle=COMMANDE
+
+# Mention auto-liquidation
+PDFBuilderAutoLiquidationMsg=Auto-liquidation de la TVA. Article 283-2 du CGI. Le client est redevable de la taxe.
+
+# == Phase 3 — Fonds & Fusion ==
+PDFBuilderBackgrounds=Fonds & Fusion
+PDFBuilderBackgroundsDesc=Gérez les images de fond, PDF de fond (papier à en-tête) et logos alternatifs pour chaque thème. Configurez aussi la fusion de PDF annexes (CGV, annexes contractuelles).
+
+# Phase 4 — LCR
+PdfBuilderLCRMention=Règlement par LCR (Lettre de Change Relevé) à l'échéance. Veuillez nous retourner la traite acceptée.
+PDFBuilderBgImage=Image de fond
+PDFBuilderBgPdf=PDF de fond (papier à en-tête)
+PDFBuilderLogoAlt=Logo alternatif
+PDFBuilderBgOpacity=Opacité du fond
+PDFBuilderMergePdf=Fusion PDF (annexes)
+PDFBuilderMergePdfDesc=Déposez ici les fichiers PDF qui seront automatiquement ajoutés en fin de document lors de la génération (CGV, annexes, etc.).
+PDFBuilderMergeInfo=Les fichiers PDF sont fusionnés dans l'ordre alphabétique après le document principal. Activez la fusion via les options du type de document correspondant.
+NoThemeDefined=Aucun thème n'est défini. Créez-en un dans l'onglet « Thèmes ».
+NoFiles=Aucun fichier
+
+# Phase 3 — Informations bancaires
+BankDetails=Coordonnées bancaires
+BankAccountNumber=Numéro de compte
+BankAccountOwner=Titulaire du compte
+BankProprio=Titulaire
+
+# Phase 3 — Encours
+OutstandingBill=Encours client
+
+# Phase 3 — Signatures
+SignatureClient=Signature du client
+SignatureTechnicien=Signature du technicien
+
+# Phase 3 — Durée
+TotalDuration=Durée totale
+PdfBuilderShowVatBreakdown=Afficher le récapitulatif de TVA
+PDFHideDetails=Masquer les détails
+PDFHideDesc=Masquer les descriptions
+PDFHideRef=Masquer les références
+PDFAddAlsoTargetDetails=Ajouter les coordonnées de la cible
+PDFUseCompanyNameOfContact=Utiliser le nom de l'entreprise du contact
+PDFShowFoldMark=Afficher les marques de pliage
+PdfBuilderLogoHeight=Hauteur du logo (mm)
+PdfBuilderHeaderSpacing=Espacement sous l'en-tête (mm)
+PdfBuilderAddressBlockWidth=Largeur des blocs d'adresse (mm)
+PdfBuilderShowCustomerCode=Afficher le code client sous la réf. document
+CustomerCode=Code client
+SupplierCode=Code fournisseur
+PdfBuilderNotePublic=Texte libre (note publique)
+PdfBuilderRecipientVat=TVA Intra
+VATRate=Taux TVA
+BaseHT=Base HT
+AmountVAT=Montant TVA
+
+# == Designer graphique ==
+PdfBuilderDesigner=Designer
+PdfBuilderDesignerTitle=Éditeur graphique de mise en page PDF
+PdfBuilderNewLayout=Nouveau layout
+PdfBuilderSelectLayout=-- Choisir un layout --
+PdfBuilderSelectOrCreateLayout=Choisissez un layout existant ou créez-en un nouveau.
+PdfBuilderSelectZone=Cliquez sur une zone pour modifier ses propriétés.
+PdfBuilderZoneTypes=Types de zones
+PdfBuilderProperties=Propriétés
+PdfBuilderDragHint=Glissez des zones depuis la palette, déplacez et redimensionnez-les
+PdfBuilderConfirmDeleteLayout=Supprimer ce layout et toutes ses zones ? Action irréversible.
+PdfBuilderSetAsDefault=Définir par défaut
+PdfBuilderPaperFormat=Format papier
+
+# == Types de zones ==
+PdfBuilderZoneLogo=Logo principal
+PdfBuilderZoneLogoAlt=Logo alternatif
+PdfBuilderZoneAddressSender=Adresse émetteur
+PdfBuilderZoneAddressRecipient=Adresse destinataire
+PdfBuilderZoneDocumentType=Type de document
+PdfBuilderZoneFieldRef=Numéro de document
+PdfBuilderZoneFieldDate=Date document
+PdfBuilderZoneFieldDueDate=Date d'échéance
+PdfBuilderZoneFieldRecipientVat=TVA Intra Client
+PdfBuilderZoneFieldCustomerCode=Code client
+PdfBuilderZoneFieldCompanyIds=Identifiants société
+PdfBuilderZoneFieldWeb=Site Web
+PdfBuilderZoneFieldObject=Objet / Titre
+
+# == Identifiants spécifiques par pays ==
+PdfBuilderProfId1FR=n°SIREN
+PdfBuilderProfId2FR=n°SIRET
+PdfBuilderProfId3FR=Code NAF-APE
+PdfBuilderProfId4FR=RCS/RM
+PdfBuilderVATIntraFR=TVA intra
+In=en
+PdfBuilderZoneTableLines=Tableau des lignes
+PdfBuilderZoneTableTotals=Tableau des totaux
+PdfBuilderZoneVatBreakdown=Ventilation TVA
+PdfBuilderZoneRib=Coordonnées bancaires (RIB)
+PdfBuilderZoneQrCode=QR Code
+PdfBuilderZoneTextStatic=Texte statique
+PdfBuilderZoneFreetext=Texte libre (note publique)
+PdfBuilderZoneSeparator=Séparateur
+PdfBuilderZoneWatermark=Filigrane
+PdfBuilderZoneSignature=Bloc signature
+PdfBuilderZonePageFooter=Pied de page
+
+# == Propriétés de zone ==
+PdfBuilderColorFont=Couleur du texte
+PdfBuilderColorBg=Couleur de fond
+PdfBuilderSectionTypo=Typographie
+PdfBuilderFontFamily=Police
+PdfBuilderBold=Gras
+PdfBuilderItalic=Italique
+PdfBuilderSectionBorder=Bordure
+PdfBuilderBorderNone=Aucune
+PdfBuilderBorderSolid=Plein
+PdfBuilderBorderDashed=Tirets
+PdfBuilderBorderDotted=Pointillés
+PdfBuilderBorderWidth=Épaisseur (mm)
+PdfBuilderBorderColor=Couleur bordure
+PdfBuilderSectionRows=Lignes du tableau
+PdfBuilderRowAltEnabled=Couleurs alternées
+PdfBuilderRowAltBg=Couleur ligne paire
+
+# == Poids & Prix/kg ==
+PdfBuilderSectionWeight=Poids & Prix/kg
+PdfBuilderShowWeight=Afficher la colonne poids
+PdfBuilderColWeight=Poids (kg)
+PdfBuilderColWeightWidth=Largeur col. poids (mm)
+PdfBuilderShowPricePerKg=Afficher le prix/kg (sous P.U. HT)
+
+# == Paramètres du document (panneau Designer) ==
+PdfBuilderDocOptions=Paramètres du document
+PdfBuilderSectionDisplay=Affichage
+PdfBuilderSectionMentions=Mentions & options
+PdfBuilderSectionBgDoc=Fond du document
+PdfBuilderSectionLayout=Mise en page
+PdfBuilderNoRepeatHeader=Ne pas répéter l'en-tête
+PdfBuilderShowLineNumbers=Numéros de ligne
+PdfBuilderShowPictures=Photos produits
+PdfBuilderDashBetweenLines=Trait entre les lignes
+PdfBuilderAddTargetDetails=Tél/email du contact (adresse)
+PdfBuilderAddClientDetails=Tél/email du client (adresse)
+PdfBuilderShowLcrMention=Mention règlement LCR
+PdfBuilderManageBackgrounds=Gérer les fonds
+PdfBuilderSectionAddress=Options adresse
+PdfBuilderHideCountry=Masquer le pays
+PdfBuilderImagePath=Image source / Path
+PdfBuilderShowProfIds=Show professional IDs
+
+# == Uploads ==
+PdfBuilderUploadFormatNotAllowed=Format non autorisé : %s
+PdfBuilderUploadError=Erreur lors de l'envoi du fichier
+PdfBuilderMergePdfAdded=PDF de fusion ajouté
+
+# == Templates ==
+PdfBuilderTemplates=Templates prédéfinis
+PdfBuilderTemplateLibrary=Bibliothèque de templates
+PdfBuilderImportTemplate=Importer JSON
+PdfBuilderExportTemplate=Exporter JSON
+PdfBuilderLoadTemplate=Charger ce template
+PdfBuilderImportSuccess=Template importé avec succès
+PdfBuilderImportError=Erreur lors de l'import du template
+PdfBuilderTemplateClassic=Classique
+PdfBuilderTemplateClassicDesc=Logo, adresses, tableau standard, RIB et QR code
+PdfBuilderTemplateModern=Moderne
+PdfBuilderTemplateModernDesc=Bande colorée en en-tête, fond léger
+PdfBuilderTemplateMinimal=Minimaliste
+PdfBuilderTemplateMinimalDesc=Noir et blanc, typographie centrée
+PdfBuilderTemplateBusiness=Business
+PdfBuilderTemplateBusinessDesc=Double colonne adresses, RIB intégré
+PdfBuilderText=Texte
+PdfBuilderUploading=Envoi en cours...
+PdfBuilderUploadSuccess=Envoi réussi !
+PdfBuilderErrorNetwork=Erreur réseau
+PdfBuilderErrorServer=Erreur serveur

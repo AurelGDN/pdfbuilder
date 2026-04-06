@@ -1,0 +1,300 @@
+# Translation file for PDF-builder module (English)
+# Copyright (C) 2024 Antigravity Project
+# GPL v2 or later
+
+# == Module ==
+ModulePdfBuilderName=PDF-builder
+ModulePdfBuilderDesc=Modern and customizable PDF template builder for Dolibarr
+
+# == Interface admin ==
+PdfBuilderSetup=PDF-builder setup
+PdfBuilderThemes=Themes
+PdfBuilderGlobalOptions=Global options
+PdfBuilderInvoices=Invoices
+PdfBuilderProposals=Commercial proposals
+PdfBuilderOrders=Sales orders
+PdfBuilderAbout=About
+
+# == Gestion des thèmes ==
+PdfBuilderNewTheme=New theme
+PdfBuilderEditTheme=Edit theme
+PdfBuilderNoThemeForType=No theme for type "%s". You can create one below.
+PdfBuilderCreateFirstTheme=Create the first theme
+PdfBuilderThemeCreated=Theme successfully created
+PdfBuilderThemeDeleted=Theme deleted
+PdfBuilderThemeDuplicated=Theme duplicated
+PdfBuilderThemeSetAsDefault=Theme set as default
+PdfBuilderConfirmDelete=Delete theme "%s"? This action is irreversible.
+PdfBuilderDefault=Default
+PdfBuilderDuplicate=Duplicate
+PdfBuilderSetDefault=Set as default
+PdfBuilderFilterByDocType=Filter by document type:
+
+# == Types de documents ==
+PdfBuilderDocType=Document type
+PdfBuilderDocTypeInvoice=Customer invoice
+PdfBuilderDocTypePropal=Commercial proposal
+PdfBuilderDocTypeOrder=Sales order
+PdfBuilderDocTypeSupplierInvoice=Vendor invoice
+PdfBuilderDocTypeSupplierOrder=Purchase order
+PdfBuilderDocTypeSupplierProposal=Vendor price request
+PdfBuilderDocTypeShipment=Shipment receipt
+PdfBuilderDocTypeReceipt=Delivery receipt
+PdfBuilderDocTypeContract=Contract
+PdfBuilderDocTypeFichinter=Intervention
+PdfBuilderDocTypeExpenseReport=Expense report
+
+# == Paramètres généraux ==
+PdfBuilderGeneralSettings=General settings
+PdfBuilderFont=FPDF Font
+PdfBuilderFontSize=Font size
+PdfBuilderTypoSection=Detailed Typography by Section
+PdfBuilderTypoRef=Ref. / Date / Customer Code
+PdfBuilderTypoAddress=Addresses (Sender / Recipient)
+PdfBuilderTypoTheader=Table Headers & Totals
+PdfBuilderTypoDesc=Description (Products/Services lines)
+PdfBuilderTypoNote=Public Notes & Bank details
+PdfBuilderTypoFreetext=Free text (Notes)
+PdfBuilderTypoSender=Sender Block
+PdfBuilderTypoRecipient=Recipient Block
+PdfBuilderTypoFooter=Footer
+PdfBuilderStyleNormal=Normal
+PdfBuilderStyleBold=Bold
+PdfBuilderStyleItalic=Italic
+PdfBuilderStyleBoldItalic=Bold & Italic
+PdfBuilderFontGlobal=Global font (override)
+PdfBuilderPaperFormat=Paper format
+PdfBuilderBorderStyle=Border style
+PdfBuilderBorderSolid=Solid
+PdfBuilderBorderDashed=Dashed
+PdfBuilderIsDefault=Default theme
+
+# == Marges ==
+PdfBuilderMargins=Document margins (mm)
+PdfBuilderMarginTop=Top margin
+PdfBuilderMarginBottom=Bottom margin
+PdfBuilderMarginLeft=Left margin
+PdfBuilderMarginRight=Right margin
+PdfBuilderTopBottom=Top / Bottom
+PdfBuilderLeftRight=Left / Right
+PdfBuilderPadding=Internal Margins (mm)
+
+# == Couleurs ==
+PdfBuilderColors=Colors
+PdfBuilderColorFont=Text color
+PdfBuilderColorBorder=Border color
+PdfBuilderColorHeaderBg=Column header background
+PdfBuilderColorHeaderTxt=Column header text
+PdfBuilderColorAddressBg=Sender block background
+PdfBuilderColorAddressBg2=Recipient block background
+PdfBuilderColorFontSender=Sender block font color
+PdfBuilderColorFontRecipient=Recipient block font color
+
+# == Options d'affichage colonnes ==
+PdfBuilderColumnSettings=Columns display
+PdfBuilderShowLineNumbers=Show line numbers
+PdfBuilderShowRefColumn=Show reference column
+PdfBuilderShowPictures=Show product images
+PdfBuilderHideVatColumn=Hide VAT column
+PdfBuilderHidePuht=Hide unit price excl. tax
+PdfBuilderHideQty=Hide quantity
+PdfBuilderHideDiscount=Hide discount
+PdfBuilderShowUnit=Show unit
+PdfBuilderShowLineTtc=Show total incl. tax per line
+PdfBuilderHideDescLong=Hide long descriptions
+PdfBuilderReverseAddress=Reverse sender/recipient addresses
+
+# Pied de page
+PdfBuilderShowFoldMark=Show folding mark
+PdfBuilderNoRepeatHeader=Do not repeat header on every page
+PdfBuilderHideRib=Hide account number (show only BIC/IBAN)
+PdfBuilderShowBonAccord=Show "Good for agreement"
+PdfBuilderShowSignature=Show signature area
+
+# == Largeurs colonnes ==
+PdfBuilderColumnWidths=Column widths
+PdfBuilderColNumber=Line N°
+PdfBuilderColRef=Reference
+PdfBuilderColVat=VAT
+PdfBuilderColPuht=U.P.
+PdfBuilderColQty=Qty
+PdfBuilderColDiscount=Discount
+PdfBuilderColTotal=Total
+
+# == Texte libre ==
+PdfBuilderFreetextSettings=Free text (public note)
+PdfBuilderFreetextHeight=Free text area height (mm)
+PdfBuilderFreetextFontsize=Free text font size
+
+# == Options globales ==
+PdfBuilderGlobalDisplayOptions=Global display options
+PdfBuilderGlobalHideDesc=Hide descriptions (global)
+PdfBuilderGlobalHideRef=Hide references (global)
+PdfBuilderGlobalShowLineTtc=Show total incl. tax per line (global)
+PdfBuilderGlobalHideVatColumn=Hide VAT column (global)
+PdfBuilderBankHideNumber=Hide account number (show only BIC/IBAN)
+
+# == Options factures ==
+PdfBuilderInvoiceOptions=Invoice specific options
+PdfBuilderInvoiceWithLineNumber=Line numbers on invoices
+PdfBuilderInvoiceWithPicture=Product pictures on invoices
+PdfBuilderAutoLiquidation=VAT auto-liquidation mention
+PdfBuilderWithOutstanding=Show customer outstanding balance
+PdfBuilderWithMergedPdf=PDF merge on invoices
+
+# == Options devis ==
+PdfBuilderProposalOptions=Settings specific to proposals
+PdfBuilderPropalWithLineNumber=Line numbers on proposals
+PdfBuilderPropalWithPicture=Product pictures on proposals
+PdfBuilderPropalWithMergedPdf=PDF merge on proposals
+
+# == Options commandes ==
+PdfBuilderOrderOptions=Settings specific to sales orders
+PdfBuilderOrderWithLineNumber=Line numbers on orders
+PdfBuilderOrderWithPicture=Product pictures on orders
+
+# == À propos ==
+PdfBuilderAboutDescription=PDF-builder is a modern and ergonomic PDF generation module for Dolibarr. It allows you to create fully customizable themes (colors, fonts, columns, margins) saved in the database, and apply them automatically to all kinds of documents.
+PdfBuilderAboutFeatures=Features
+PdfBuilderAboutCompatibility=Compatibility
+PdfBuilderAboutDev=Editor
+PdfBuilderFeatureThemes=Multiple themes per document type
+PdfBuilderFeatureColors=Full color palette (HTML5 color pickers)
+PdfBuilderFeatureColumns=Configurable column widths
+PdfBuilderFeatureDocs=Invoices, proposals, orders, interventions, contracts...
+PdfBuilderFeatureMerge=PDF fusion (contract attachments, terms)
+PdfBuilderFeatureFR=French legal mentions (SIRET, VAT, auto-liquidation)
+
+# == Mentions PDF ==
+PdfInvoiceTitle=INVOICE
+PdfPropalTitle=PROPOSAL
+PdfOrderTitle=ORDER
+PdfBuilderZoneFieldRecipientVat=Customer VAT Number
+PdfBuilderZoneFieldCustomerCode=Customer code
+
+# Mention auto-liquidation
+PDFBuilderAutoLiquidationMsg=VAT auto-liquidation. Art. 283-2 of the CGI. The customer is liable for the tax.
+
+# == Phase 3 — Fonds & Fusion ==
+PDFBuilderBackgrounds=Backgrounds & Fusion
+PDFBuilderBackgroundsDesc=Manage background images, background PDFs (letterheads), and alternative logos per theme. You can also configure PDF fusion (append files at the end of generated PDFs).
+
+# Phase 4 — LCR
+PdfBuilderLCRMention=Payment by LCR (Lettre de Change Relevé) at due date. Please return the accepted draft.
+PDFBuilderBgImage=Background image
+PDFBuilderBgPdf=Background PDF (Letterhead)
+PDFBuilderLogoAlt=Alternative logo
+PDFBuilderBgOpacity=Background opacity
+PDFBuilderMergePdf=PDF Fusion (attachments)
+PDFBuilderMergePdfDesc=Drop PDF files here to be automatically appended at the end of generated documents (T&C, annexes, etc.).
+PDFBuilderMergeInfo=PDF files are merged in alphabetical order after the main document. Enable fusion via the options of the corresponding document type.
+NoThemeDefined=No theme defined. Create one in the "Themes" tab.
+NoFiles=No files
+
+# Phase 3 — Informations bancaires
+BankDetails=Bank account details
+BankAccountNumber=Account number
+BankAccountOwner=Account owner
+BankProprio=Account owner (IBAN)
+
+# Phase 3 — Encours
+OutstandingBill=Outstanding balance
+
+# Phase 3 — Signatures
+SignatureClient=Customer signature
+SignatureTechnicien=Technician signature
+
+# Phase 3 — Durée
+TotalDuration=Total duration
+PdfBuilderShowVatBreakdown=Show VAT breakdown
+PDFHideDetails=Hide details
+PDFHideDesc=Hide descriptions
+PDFHideRef=Hide references
+PDFAddAlsoTargetDetails=Add target details
+PDFUseCompanyNameOfContact=Use contact's company name
+PDFShowFoldMark=Show fold marks
+PdfBuilderLogoHeight=Logo height (mm)
+PdfBuilderHeaderSpacing=Header spacing (mm)
+PdfBuilderAddressBlockWidth=Address blocks width (mm)
+PdfBuilderShowCustomerCode=Show customer code under document ref.
+CustomerCode=Customer code
+SupplierCode=Supplier code
+PdfBuilderNotePublic=Free text (public note)
+PdfBuilderRecipientVat=VAT Number
+VATRate=VAT Rate
+BaseHT=Base HT
+AmountVAT=VAT Amount
+
+# == Zone properties ==
+PdfBuilderColorFont=Text color
+PdfBuilderColorBg=Background color
+PdfBuilderSectionTypo=Typography
+PdfBuilderFontFamily=Font
+PdfBuilderBold=Bold
+PdfBuilderItalic=Italic
+PdfBuilderSectionBorder=Border
+PdfBuilderBorderNone=None
+PdfBuilderBorderSolid=Solid
+PdfBuilderBorderDashed=Dashed
+PdfBuilderBorderDotted=Dotted
+PdfBuilderBorderWidth=Width (mm)
+PdfBuilderBorderColor=Border color
+PdfBuilderSectionRows=Table rows
+PdfBuilderRowAltEnabled=Alternate row colors
+PdfBuilderRowAltBg=Even row color
+
+# == Document settings (Designer panel) ==
+PdfBuilderDocOptions=Document settings
+PdfBuilderSectionDisplay=Display
+PdfBuilderSectionMentions=Mentions & options
+PdfBuilderSectionBgDoc=Page background
+PdfBuilderSectionLayout=Layout
+PdfBuilderNoRepeatHeader=Do not repeat header
+PdfBuilderShowLineNumbers=Line numbers
+PdfBuilderShowPictures=Product pictures
+PdfBuilderDashBetweenLines=Dash between lines
+PdfBuilderAddTargetDetails=Phone/email of contact (address)
+PdfBuilderAddClientDetails=Phone/email of customer (address)
+PdfBuilderShowLcrMention=LCR payment mention
+PdfBuilderManageBackgrounds=Manage backgrounds
+PdfBuilderSectionAddress=Address options
+PdfBuilderHideCountry=Hide country
+PdfBuilderImagePath=Image source / Path
+PdfBuilderShowProfIds=Show professional IDs
+PdfBuilderZoneFieldCompanyIds=Company identifiers
+PdfBuilderZoneFieldWeb=Website
+PdfBuilderZoneFieldRecipientVat=Customer VAT Number
+
+# == Uploads ==
+PdfBuilderUploadFormatNotAllowed=Format not allowed: %s
+PdfBuilderUploadError=File upload error
+PdfBuilderMergePdfAdded=Merge PDF added
+PdfBuilderText=Text
+PdfBuilderUploading=Uploading...
+PdfBuilderUploadSuccess=Upload success!
+PdfBuilderErrorNetwork=Network error
+PdfBuilderErrorServer=Server error
+
+# == Weight & Price/kg ==
+PdfBuilderSectionWeight=Weight & Price/kg
+PdfBuilderShowWeight=Show weight column
+PdfBuilderColWeight=Weight (kg)
+PdfBuilderColWeightWidth=Weight col. width (mm)
+PdfBuilderShowPricePerKg=Show price/kg (below unit price)
+
+# == Templates ==
+PdfBuilderTemplates=Predefined templates
+PdfBuilderTemplateLibrary=Template library
+PdfBuilderImportTemplate=Import JSON
+PdfBuilderExportTemplate=Export JSON
+PdfBuilderLoadTemplate=Load this template
+PdfBuilderImportSuccess=Template imported successfully
+PdfBuilderImportError=Error importing template
+PdfBuilderTemplateClassic=Classic
+PdfBuilderTemplateClassicDesc=Logo, addresses, standard table, bank details and QR code
+PdfBuilderTemplateModern=Modern
+PdfBuilderTemplateModernDesc=Colored header band, light background
+PdfBuilderTemplateMinimal=Minimal
+PdfBuilderTemplateMinimalDesc=Black and white, centered typography
+PdfBuilderTemplateBusiness=Business
+PdfBuilderTemplateBusinessDesc=Double-column addresses, integrated bank details
