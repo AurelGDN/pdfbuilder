@@ -75,12 +75,7 @@ Built on Dolibarr's modern architecture (Active Record DAO, global variable patt
    - Create or open an invoice/quote in Dolibarr
    - Click "Generate PDF" — it now uses your custom layout!
 
-#### 📖 Documentation
 
-- **[Module Architecture](./docs/ARCHITECTURE.md)** — Database schema, class design
-- **[Zone Types Reference](./docs/ZONES.md)** — Complete list of zone types and parameters
-- **[Customization Guide](./docs/CUSTOMIZATION.md)** — Advanced themes and styling
-- **[API Reference](./docs/API.md)** — Programmatic layout creation
 
 #### 🔧 Technical Details
 
@@ -119,7 +114,7 @@ We welcome pull requests, bug reports, and feature suggestions!
 #### 📧 Support
 
 - **Email**: contact@antigravityproject.com
-- **Documentation**: https://pdfbuilder.antigravityproject.com
+- **Documentation**: https://github.com/AurelGDN/pdfbuilder
 - **Community Forum**: [Dolibarr Forums](https://www.dolibarr.org/forum.php)
 
 ---
@@ -204,12 +199,7 @@ Conçu sur l'architecture moderne de Dolibarr (DAO Active Record, gestion des va
    - Créez ou ouvrez une facture/devis dans Dolibarr
    - Cliquez sur « Générer PDF » — elle utilise maintenant votre mise en page custom !
 
-#### 📖 Documentation
 
-- **[Architecture du Module](./docs/ARCHITECTURE.md)** — Schéma BDD, conception des classes
-- **[Référence des Zones](./docs/ZONES.md)** — Liste complète des types et paramètres
-- **[Guide de Personnalisation](./docs/CUSTOMIZATION.md)** — Thèmes avancés et styles
-- **[Référence API](./docs/API.md)** — Création programmée de mises en page
 
 #### 🔧 Détails Techniques
 
@@ -248,7 +238,7 @@ Nous accueillons les pull requests, rapports de bugs et suggestions de fonctionn
 #### 📧 Support
 
 - **Email** : contact@antigravityproject.com
-- **Documentation** : https://pdfbuilder.antigravityproject.com
+- **Documentation** : https://github.com/AurelGDN/pdfbuilder
 - **Forum Communautaire** : [Forums Dolibarr](https://www.dolibarr.org/forum.php)
 
 ---
